@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>OnlineQuiz</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>welcome.html</welcome-file>
+    <welcome-file>teacher.html</welcome-file>
+    <welcome-file>student.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>OnlineQuiz</servlet-name>
+    <servlet-class>MyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Insertquestion</servlet-name>
+    <servlet-class>Question</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Student</servlet-name>
+    <servlet-class>Student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OnlineQuiz</servlet-name>
+    <url-pattern>/OnlineQuiz</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Insertquestion</servlet-name>
+    <url-pattern>/Insertquestion</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/Student</url-pattern>
+  </servlet-mapping>
+</web-app>
